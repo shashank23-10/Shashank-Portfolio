@@ -77,8 +77,9 @@
     cursor: pointer;
     color: #333;
     transition: transform 0.3s ease;
+    
   }
-  
+
   /* Beautified Hamburger Area for Mobile Devices */
   @media (max-width: 768px) {
     .mobile-menu-icon {
