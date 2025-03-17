@@ -1,0 +1,132 @@
+/* Education Section Background & Decoration */
+.education-section {
+  position: relative;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  text-align: center;
+  overflow: hidden;
+}
+
+.education-section::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 150px;
+  height: 150px;
+  background: rgba(253, 160, 133, 0.3);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* Section Title Styling */
+.section-title {
+  font-size: 2.8rem;
+  margin-bottom: 60px;
+  color: #333;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background: #fda085;
+  bottom: -10px;
+  left: 25%;
+  border-radius: 5px;
+}
+
+/* Card Styling with Gradient Border & Animation */
+.card {
+  background: #fff;
+  border-radius: 15px;
+  margin: 20px auto;
+  padding: 40px 30px;
+  max-width: 800px;
+  text-align: left;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInUp 0.8s ease forwards;
+  z-index: 1;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #fda085, #f6d365);
+  z-index: -1;
+  border-radius: 18px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Content */
+.card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #fda085;
+}
+
+.card .institution {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.card .result {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger Animation Delay for Multiple Cards */
+.card:nth-of-type(1) {
+  animation-delay: 0.2s;
+}
+.card:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+.card:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .education-section {
+    padding: 60px 10px;
+  }
+  .section-title {
+    font-size: 2.2rem;
+  }
+  .card {
+    padding: 30px 20px;
+    margin: 15px;
+  }
+}
