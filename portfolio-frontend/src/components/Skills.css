@@ -3,6 +3,8 @@
   padding: 60px 20px;
   background: #f2f2f2;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -25,6 +27,7 @@
   width: 100%;
   margin: 0 auto;
   justify-items: center; /* Center each grid item */
+  text-align: center;
 }
 
 /* Remove extra margins from grid children */
@@ -42,6 +45,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
   max-width: 300px; /* Ensures consistent card sizing */
+  
 }
 
 /* Hover Effect for Cards */

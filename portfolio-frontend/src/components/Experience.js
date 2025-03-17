@@ -5,7 +5,9 @@ import { FaBriefcase } from 'react-icons/fa';
 const Experience = () => {
   return (
     <section id="experience" className="section">
-      <h2><FaBriefcase /> Experience</h2>
+      <h2>
+        <FaBriefcase /> Experience
+      </h2>
       
       <div className="card">
         <h3>KPMG India – Digital Strategy Intern</h3>
