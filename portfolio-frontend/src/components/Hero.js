@@ -89,7 +89,7 @@ const Hero = () => {
               <FaEnvelope />
             </a>
             <a
-              href="https://leetcode.com/"
+              href="https://leetcode.com/u/Dc0dER/"
               target="_blank"
               rel="noopener noreferrer"
             >
